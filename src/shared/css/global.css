@@ -1,11 +1,63 @@
 :root {
+    /* 🎨 Colores */
+    --color-bg: #f9f9f9;
+    --color-bg-sidebar: #ffffff;
+    --color-bg-card: #ffffff;
+    --color-bg-hover: #f2f2f2;
 
-    --color-bg: #F2F0F5;
+    --color-text-primary: #111111;
+    --color-text-secondary: #555555;
+    --color-text-muted: #888888;
+    --color-text-placeholder: #b0b0b0;
 
-    --font-size: 1rem;
+    --color-border: #e5e5e5;
+    --color-divider: #dedede;
 
+    --color-accent: #2563eb; /* azul para estados activos/enlaces */
+    --color-tag-bg: #f3f4f6;
+    --color-tag-text: #374151;
+
+    /* 📐 Tipografía */
     --font-family: "Poppins", sans-serif;
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-base: 16px;
+    --font-size-lg: 18px;
+    --font-size-xl: 20px;
+    --font-size-2xl: 24px;
 
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    /* 📏 Espaciados */
+    --spacing-xxs: 2px;
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    --spacing-2xl: 24px;
+    --spacing-3xl: 32px;
+
+    /* ⬜ Bordes */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-full: 9999px;
+
+    --border-width: 1px;
+
+    /* 🌫️ Sombras */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 2px 4px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 4px 8px rgba(0, 0, 0, 0.12);
+
+    /* 📌 Layout */
+    --sidebar-width: 260px;
+    --header-height: 60px;
+    --content-max-width: 900px;
 }
 
 * {
@@ -20,13 +72,13 @@ html {
 }
 
 body {
-    font-size: var(--font-size);
+    font-size: var(--font-size-base);
     background-color: var(--color-bg);
 }
 
 input, textarea, select {
     outline: none;
-    border: 1px solid #EEEEEE;
+    border: var(--border-width) solid var(--color-border);
 }
 
 ul, li, ol {
